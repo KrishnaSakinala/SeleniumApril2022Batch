@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNGSuite">
+	<test name="Positive">
+		<classes>
+			<class name="testng.BeforeAndAfterDemo">
+				<methods>
+					<include name="loginPositiveScenario1"></include>
+					<include name="loginPositiveScenario2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Negative">
+		<classes>
+			<class name="testng.BeforeAndAfterDemo">
+				<methods>
+					<include name="loginNegativeScenario1"></include>
+					<include name="loginNegativeScenario2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
